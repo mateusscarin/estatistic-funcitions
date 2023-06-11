@@ -16,10 +16,11 @@ const montaParametros = () => {
                 <div><label>Desvio padrão:</label>
                 <input type="text"></div>
                 <div>
-                <label>Grau de confiança:</label>
+                <div class="pai"> <label>Grau de confiança:</label>
                 <div><input type="radio" name="grauConfianca"><span>90%</span></div>
                 <div><input type="radio" name="grauConfianca"><span>95%</span></div>
                 <div><input type="radio" name="grauConfianca"><span>99%</span></div>
+                </div>
                 </div>
                 <div><label>Tamanho da amostra:</label>
                 <input type="text"> </div>
@@ -27,19 +28,20 @@ const montaParametros = () => {
             break;
         case 1:
             parametros.innerHTML = `
-                <div><label>Média:</label>
-                <input type="text"> </div>
-                <div><label>Desvio padrão:</label>
-                <input type="text"></div>
-                <div>
-                <label>Grau de confiança:</label>
-                <div><input type="radio" name="grauConfianca"><span>90%</span></div>
-                <div><input type="radio" name="grauConfianca"><span>95%</span></div>
-                <div><input type="radio" name="grauConfianca"><span>99%</span></div>
-                </div>
-                <div><label>Tamanho da amostra:</label>
-                <input type="text"> </div>
-                <input type="submit" onclick="mostraResultado()">`;
+            <div><label>Média:</label>
+            <input type="text"> </div>
+            <div><label>Desvio padrão:</label>
+            <input type="text"></div>
+            <div>
+            <div class="pai"> <label>Grau de confiança:</label>
+            <div><input type="radio" name="grauConfianca"><span>90%</span></div>
+            <div><input type="radio" name="grauConfianca"><span>95%</span></div>
+            <div><input type="radio" name="grauConfianca"><span>99%</span></div>
+            </div>
+            </div>
+            <div><label>Tamanho da amostra:</label>
+            <input type="text"> </div>
+            <input type="submit" onclick="mostraResultado()">`;
             break;
         case 2:
             parametros.innerHTML = `
@@ -48,10 +50,11 @@ const montaParametros = () => {
             <div><label>Desvio padrão:</label>
             <input type="text"></div>
             <div>
-            <label>Grau de confiança:</label>
+            <div class="pai"> <label>Grau de confiança:</label>
             <div><input type="radio" name="grauConfianca"><span>90%</span></div>
             <div><input type="radio" name="grauConfianca"><span>95%</span></div>
             <div><input type="radio" name="grauConfianca"><span>99%</span></div>
+            </div>
             </div>
             <div><label>Tamanho da amostra:</label>
             <input type="text"> </div>
@@ -64,10 +67,11 @@ const montaParametros = () => {
             <div><label>Desvio padrão:</label>
             <input type="text"></div>
             <div>
-            <label>Grau de confiança:</label>
+            <div class="pai"> <label>Grau de confiança:</label>
             <div><input type="radio" name="grauConfianca"><span>90%</span></div>
             <div><input type="radio" name="grauConfianca"><span>95%</span></div>
             <div><input type="radio" name="grauConfianca"><span>99%</span></div>
+            </div>
             </div>
             <div><label>Tamanho da amostra:</label>
             <input type="text"> </div>
