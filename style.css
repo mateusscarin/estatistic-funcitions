@@ -7,18 +7,22 @@ body {
     background: #fff;
 }
 
-.titulo {
-    text-align: center;
-    padding: 20px;
-    font-size: 2em;
-    background: #333;
-    color: #fff;
+.container{
+    width: 50%;
+   margin: auto;
+   padding: 20px;
+   background: #333;
+   border-radius: 10px;
 }
 
 .seleciona-formula {
     text-align: center;
-    padding: 20px 0;
-    background: #f1f1f1;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    background: #f7f3f3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .seleciona-formula label {
@@ -30,12 +34,13 @@ body {
 }
 
 #parametros {
-    width: 60%;
+    width: 85%;
     margin: auto;
     padding: 20px;
-    background: #fff;
+    background: #f7f3f3;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 2%;
 }
 
 #parametros div {
@@ -77,3 +82,8 @@ input[type="submit"] {
     color: #fff;
     cursor: pointer;
 }
+
+.pai{
+    display: flex;
+}
+

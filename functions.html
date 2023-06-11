@@ -10,26 +10,30 @@
 </head>
 
 <body>
-    <div class="seleciona-formula">
-        <label for="formula">Informe a fórmula:</label>
-        <div>
-            <input type="radio" name="formulaSelecionada" value="0" onclick="montaParametros()">
-            <span>Intervalo de confiança para média</span>
+    <div class="container">
+        <div class="seleciona-formula">
+            <label for="formula">Informe a fórmula:</label>
+            <div>
+                <input type="radio" name="formulaSelecionada" value="0" onclick="montaParametros()">
+                <span>Intervalo de confiança para média</span>
+            </div>
+            <div>
+                <input type="radio" name="formulaSelecionada" value="1" onclick="montaParametros()">
+                <span>Intervalo de confiança para proporção</span>
+            </div>
+            <div>
+                <input type="radio" name="formulaSelecionada" value="2" onclick="montaParametros()">
+                <span>Tamanho da amostra pela média</span>
+            </div>
+            <div>
+                <input type="radio" name="formulaSelecionada" value="3" onclick="montaParametros()">
+                <span>Tamanho da amostra pela proporção</span>
+            </div>
         </div>
-        <div>
-            <input type="radio" name="formulaSelecionada" value="1" onclick="montaParametros()">
-            <span>Intervalo de confiança para proporção</span>
-        </div>
-        <div>
-            <input type="radio" name="formulaSelecionada" value="2" onclick="montaParametros()">
-            <span>Tamanho da amostra pela média</span>
-        </div>
-        <div>
-            <input type="radio" name="formulaSelecionada" value="3" onclick="montaParametros()">
-            <span>Tamanho da amostra pela proporção</span>
-        </div>
-    </div>
+    
     <div id="parametros"></div>
+
+</div>
     <div id="resultado"></div>
     <script src="script.js"></script>
 </body>
