@@ -23,8 +23,9 @@ const montaParametros = () => {
                 <label>Tamanho da amostra:</label>
                 <input type="text" id="tamanhoAmostra">
             </div>
-            <div>
+            <div class = "pai">
                 <label>Grau de confiança:</label>
+                <div class = "pai">
                 <div>
                     <input type="radio" name="grauConfianca" value="1.645"><span>90%</span>
                 </div>
@@ -33,6 +34,7 @@ const montaParametros = () => {
                 </div>
                 <div>
                     <input type="radio" name="grauConfianca" value="2.575"><span>99%</span>
+                </div>
                 </div>
             </div>
             <input type="submit" onclick="mostraResultado()">`;
@@ -47,18 +49,20 @@ const montaParametros = () => {
                 <label>Tamanho da amostra:</label>
                 <input type="text" id="tamanhoAmostra">
             </div>
+            <div class = "pai">
+            <label>Grau de confiança:</label>
+            <div class = "pai">
             <div>
-                <label>Grau de confiança:</label>
-                <div>
-                    <input type="radio" name="grauConfianca" value="1.645"><span>90%</span>
-                </div>
-                <div>
-                    <input type="radio" name="grauConfianca" value="1.96"><span>95%</span>
-                </div>
-                <div>
-                    <input type="radio" name="grauConfianca" value="2.575"><span>99%</span>
-                </div>
+                <input type="radio" name="grauConfianca" value="1.645"><span>90%</span>
             </div>
+            <div>
+                <input type="radio" name="grauConfianca" value="1.96"><span>95%</span>
+            </div>
+            <div>
+                <input type="radio" name="grauConfianca" value="2.575"><span>99%</span>
+            </div>
+            </div>
+        </div>
             <input type="submit" onclick="mostraResultado()">`;
             break;
         case 2:
@@ -71,18 +75,20 @@ const montaParametros = () => {
                 <label>Erro médio:</label>
                 <input type="text" id="erroMedio">
             </div>
+            <div class = "pai">
+            <label>Grau de confiança:</label>
+            <div class = "pai">
             <div>
-                <label>Grau de confiança:</label>
-                <div>
-                    <input type="radio" name="grauConfianca" value="1.645"><span>90%</span>
-                </div>
-                <div>
-                    <input type="radio" name="grauConfianca" value="1.96"><span>95%</span>
-                </div>
-                <div>
-                    <input type="radio" name="grauConfianca" value="2.575"><span>99%</span>
-                </div>
+                <input type="radio" name="grauConfianca" value="1.645"><span>90%</span>
             </div>
+            <div>
+                <input type="radio" name="grauConfianca" value="1.96"><span>95%</span>
+            </div>
+            <div>
+                <input type="radio" name="grauConfianca" value="2.575"><span>99%</span>
+            </div>
+            </div>
+        </div>
             <input type="submit" onclick="mostraResultado()">`;
             break;
         case 3:
@@ -95,8 +101,9 @@ const montaParametros = () => {
                 <label>Erro proporcional:</label>
                 <input type="text" id="erroProp">
             </div>
-            <div>
+            <div class = "pai">
                 <label>Grau de confiança:</label>
+                <div class = "pai">
                 <div>
                     <input type="radio" name="grauConfianca" value="1.645"><span>90%</span>
                 </div>
@@ -105,6 +112,7 @@ const montaParametros = () => {
                 </div>
                 <div>
                     <input type="radio" name="grauConfianca" value="2.575"><span>99%</span>
+                </div>
                 </div>
             </div>
             <input type="submit" onclick="mostraResultado()">`;

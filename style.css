@@ -1,18 +1,20 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background: #16a085;
 }
 
-.container{
-    width: 50%;
-   margin: auto;
-   padding: 20px;
-   background: #333;
-   border-radius: 10px;
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.container:hover {
+    background: #f7f3f3;
 }
 
 .seleciona-formula {
@@ -20,17 +22,32 @@ body {
     width: 85%;
     margin: auto;
     padding: 20px;
-    background: #f7f3f3;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.seleciona-formula {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to right, #1e5799, #16a085);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
 
 .seleciona-formula label {
     font-size: 1.2em;
+    color: #fff;
 }
 
 .seleciona-formula div {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+}
+
+.seleciona-formula i {
+    margin-right: 10px;
+    color: #fff;
 }
 
 #parametros {
@@ -38,13 +55,18 @@ body {
     margin: auto;
     padding: 20px;
     background: #f7f3f3;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 2%;
+    transition: background 0.3s ease;
+}
+
+#parametros:hover {
+    background: #fff;
 }
 
 #parametros div {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 #parametros label {
@@ -68,7 +90,9 @@ body {
     padding: 20px;
     background: #333;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
 
 input[type="submit"] {
@@ -83,7 +107,21 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-.pai{
+.pai {
     display: flex;
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* animação de fade-in ao carregar */
+body {
+    animation: fadein 4s;
+}
