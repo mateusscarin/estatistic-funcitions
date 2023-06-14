@@ -125,3 +125,7 @@ input[type="submit"] {
 body {
     animation: fadein 4s;
 }
+
+.formulas{
+    color:#dddddd
+}

@@ -132,7 +132,7 @@ const mostraResultado = () => {
         case 0:
             const desvioPadrao = Number(document.getElementById('desvioPadrao').value.replace(',', '.'));
             const media = Number(document.getElementById('media').value.replace(',', '.'));
-            const tamanhoAmostra = Number(document.getElementById('erroMedio').value.replace('.', ','));
+            const tamanhoAmostra = Number(document.getElementById('tamanhoAmostra').value.replace('.', ','));
             let erroMed = calcularErroMedia(grauConfianca, desvioPadrao, tamanhoAmostra);
             resultado.innerHTML = `O erro médio é: ${(erroMed)}</br>
                                 Intervalo de confiança: ${(media - erroMed)} < μ < ${(media + erroMed)}`;
